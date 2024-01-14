@@ -121,7 +121,7 @@ export default function HomePage() {
       text: userMessage,
       isUser: true,
     });
-
+    
     // Generate initial prompt and calculate tokens
     let prompt = `${generatePrompt(llamaTemplate, messageHistory)}\n`;
     // Check if we exceed max tokens and truncate the message history if so.
