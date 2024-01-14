@@ -37,3 +37,4 @@ async function runMixtral({ prompt, maxTokens, temperature, topP }) {
     },
   });
 }
+lm
