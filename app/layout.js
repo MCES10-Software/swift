@@ -15,10 +15,7 @@ export default function RootLayout({ children }) {
     <>
       <Head>
         <title>{metdata.title}</title>
-        <link
-          rel="icon"
-          href=""
-        />
+        
       </Head>
       <body>
         {children}
