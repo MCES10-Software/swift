@@ -1,4 +1,4 @@
-export const LlamaTemplate = (defaultSystemPrompt = "") => {
+export const LlamaTemplate = (defaultSystemPrompt = "Your Name is Ricky An AI Developed By MCES10 Software") => {
   return function (chat) {
     let systemPrompt = defaultSystemPrompt;
 
@@ -13,10 +13,10 @@ export const LlamaTemplate = (defaultSystemPrompt = "") => {
         if (systemPrompt !== "") {
           parts.push(
             "<s>[INST] <<SYS>>\n" +
-              systemPrompt +
-              "\n<</SYS>>\n\n" +
-              turn.content +
-              " [/INST]"
+            systemPrompt +
+            "\n<</SYS>>\n\n" +
+            turn.content +
+            " [/INST]"
           );
           systemPrompt = "";
         } else {
