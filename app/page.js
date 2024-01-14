@@ -33,11 +33,11 @@ const generatePrompt = (template, messages) => {
 function CTA({ shortenedModelName }) {
   return (
     <a
-      href="https://replicate.com/mistralai/mixtral-8x7b-instruct-v0.1?utm_source=project&utm_campaign=mixtralai"
+      href="https://www.mces10-software.com"
       target="_blank"
       className="underline"
     >
-      Run Mixtral in the cloud.
+      MCES10 Software
     </a>
   );
 }
