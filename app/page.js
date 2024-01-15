@@ -157,13 +157,13 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="bg-gray-00 border-b-2 text-center p-3">
+      <div className="bg-teal-800 border-b-2 text-center text-white p-3">
         RickyAI{" "}
         <CTA shortenedModelName={model.shortened} />
       </div>
       <nav className="grid grid-cols-2 pt-3 pl-6 pr-3 sm:grid-cols-3 sm:pl-0">
         <div className="hidden sm:inline-block "></div>
-        <div className="font-semibold text-white sm:text-center">
+        <div className="font-semibold  sm:text-center">
           <img
             className="h-5 w-5 inline-flex mr-3"
             src="/static/ricky.png"
