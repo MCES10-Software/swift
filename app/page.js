@@ -35,7 +35,7 @@ function CTA({ shortenedModelName }) {
     <a
       href="https://www.mces10-software.com"
       target="_blank"
-      className="underline"
+      className="underline text-white"
     >
       MCES10 Software
     </a>
@@ -157,13 +157,13 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="bg-#006368 border-b-2 text-center p-3">
+      <div className="bg-gray-00 border-b-2 text-center p-3">
         RickyAI{" "}
         <CTA shortenedModelName={model.shortened} />
       </div>
       <nav className="grid grid-cols-2 pt-3 pl-6 pr-3 sm:grid-cols-3 sm:pl-0">
-        <div className="hidden sm:inline-block"></div>
-        <div className="font-semibold text-gray-500 sm:text-center">
+        <div className="hidden sm:inline-block "></div>
+        <div className="font-semibold text-white sm:text-center">
           <img
             className="h-5 w-5 inline-flex mr-3"
             src="/static/ricky.png"
@@ -190,8 +190,8 @@ export default function HomePage() {
 
       <Toaster position="top-left" reverseOrder={false} />
 
-      <main className="max-w-2xl pb-5 mx-auto mt-4 sm:px-4">
-        <div className="text-center"></div>
+      <main className="max-w-2xl pb-5 mx-auto mt-4 sm:px-4 ">
+        <div className="text-center bg-teal-800"></div>
         {messages.length == 0 && (
           <EmptyState setPrompt={setAndSubmitPrompt} setOpen={setOpen} />
         )}
@@ -251,7 +251,7 @@ export default function HomePage() {
                   />
                 </svg>
               </div>
-              <p className="text-gray-500 pl-3">Queued...</p>
+              <p className="text-white pl-3">Queued...</p>
             </div>
           ) : (
             <></>
