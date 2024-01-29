@@ -3,10 +3,10 @@ import Head from "next/head";
 import "../styles/globals.css";
 
 export const metdata = {
-  title: "Ricky AI 4",
+  title: "AI Hub",
   openGraph: {
-    title: "RickyAI 4",
-    description: "RickyAI 4",
+    title: "AI Hub",
+    description: "AI Hub",
   },
 };
 

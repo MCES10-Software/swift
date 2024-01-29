@@ -30,17 +30,8 @@ const generatePrompt = (template, messages) => {
   return template(chat);
 };
 
-function CTA({ shortenedModelName }) {
-  return (
-    <a
-      href="https://www.mces10-software.com"
-      target="_blank"
-      className="underline text-white"
-    >
-      MCES10 Software
-    </a>
-  );
-}
+
+
 
 const metricsReducer = (state, action) => {
   switch (action.type) {
@@ -158,8 +149,8 @@ export default function HomePage() {
   return (
     <>
       <div className="bg-teal-800 border-b-2 text-center text-white p-3">
-        RickyAI{" "}
-        <CTA shortenedModelName={model.shortened} />
+        Chat with an AI{" "}
+
       </div>
       <nav className="grid grid-cols-2 pt-3 pl-6 pr-3 sm:grid-cols-3 sm:pl-0">
         <div className="hidden sm:inline-block "></div>
@@ -169,7 +160,7 @@ export default function HomePage() {
             src="/static/ricky.png"
             alt="mistral"
           />
-          <span className="hidden sm:inline-block mt-2">Chat with RickyAI</span>{" "}
+          <span className="hidden sm:inline-block mt-2">Chat with an AI</span>{" "}
 
         </div>
         <div className="flex justify-end">
